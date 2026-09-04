@@ -8,13 +8,6 @@ print ("================================")
 print ("username: ", Username)
 print ("age: ", Age)
 print ("content category: ", Category)
-followers = 10
 
-followers += 50
-print ("Day 1: ", followers)
-
-followers += 30
-print ("Day 2: ", followers)
-
-followers -= 10
-print ("Day 3: ", followers)
+if int(Age) > 40 and Category == "fun" :
+    print ("You are too old what is fun for you?")
