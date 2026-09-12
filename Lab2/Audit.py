@@ -19,7 +19,12 @@ inventory = 0
 stock = input("Enter stock quantity (or type 'quit' to exit):")
 
 while stock != "quit":
-    if stock.isdigit() == False :
-        print()
-        stock
+    if stock.isdigit() == True :
+        inventory += int(stock)
+        stock = input("Enter stock quantity (or type 'quit' to exit):")
+    elif stock.isdigit() == False :
+        print("invalid input please enter a number")
+        stock = input("Enter stock quantity (or type 'quit' to exit):")
+
+print("total inventry: " + str(inventory))
 
