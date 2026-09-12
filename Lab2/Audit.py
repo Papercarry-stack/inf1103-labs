@@ -26,12 +26,8 @@ while stock.lower() != "quit":
             break
         stock = input("Enter stock quantity (or type 'quit' to exit):")
 
-    elif stock.isdigit() == False  :
-        print("invalid input please enter a number")
-        stock = input("Enter stock quantity (or type 'quit' to exit):")
-        rejected += 1
-    elif stock.isdigit() < 0  :
-        print("invalid input negetive numbers not allowed")
+    elif stock.isdigit() == False  : #isdigit also rejects -ve numbers
+        print("invalid input please enter a positive number")
         stock = input("Enter stock quantity (or type 'quit' to exit):")
         rejected += 1
 
