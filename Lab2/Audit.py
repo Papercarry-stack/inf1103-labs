@@ -15,16 +15,25 @@
 
 
 inventory = 0
-
+rejected = 0
 stock = input("Enter stock quantity (or type 'quit' to exit):")
 
-while stock != "quit":
+while stock.lower() != "quit":
     if stock.isdigit() == True :
         inventory += int(stock)
-        stock = input("Enter stock quantity (or type 'quit' to exit):")
-    elif stock.isdigit() == False :
-        print("invalid input please enter a number")
+        if inventory > 500 :
+            print("Total Inventory exceeds 500 units.")
+            break
         stock = input("Enter stock quantity (or type 'quit' to exit):")
 
-print("total inventry: " + str(inventory))
+    elif stock.isdigit() == False  :
+        print("invalid input please enter a number")
+        stock = input("Enter stock quantity (or type 'quit' to exit):")
+        rejected += 1
+    elif stock.isdigit() < 0  :
+        print("invalid input please enter a number")
+        stock = input("Enter stock quantity (or type 'quit' to exit):")
+        rejected += 1
+
+print("Total unit processed: " + str(inventory) + "\n number of rejected inputs: " + str(rejected))
 
