@@ -1,0 +1,41 @@
+commit 392ba113c447363cb412e118c6e849367a6d2050 (HEAD -> master)
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 15:07:09 2026 +0800
+
+    too old for fun
+
+commit 334feedf5e6c78483cc5149e4ccfce6507644faf
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 14:56:49 2026 +0800
+
+    input for profile
+
+commit 7339597cfef5bf19e2c640bcb568a656c91be9c6
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 14:49:38 2026 +0800
+
+    updated follower count
+
+commit 931c152b04f8cdc54d114ede55e08e9736c0d824
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 14:45:21 2026 +0800
+
+    first update
+
+commit bc2ab1da3dc312fac58df9298e229f43a51da394
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 14:37:26 2026 +0800
+
+    first post
+(END)
+commit 931c152b04f8cdc54d114ede55e08e9736c0d824
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 14:45:21 2026 +0800
+
+    first update
+
+commit bc2ab1da3dc312fac58df9298e229f43a51da394
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 4 14:37:26 2026 +0800
+
+    first post
