@@ -14,22 +14,44 @@
 
 
 
-inventory = 0
-rejected = 0
-stock = input("Enter stock quantity (or type 'quit' to exit):")
+MAX_INVENTORY = 500
+TAX = 0.1
 
-while stock.lower() != "quit":
-    if stock.isdigit() == True :
-        inventory += int(stock)
-        if inventory > 500 :
-            print("Total Inventory exceeds 500 units.")
-            break
-        stock = input("Enter stock quantity (or type 'quit' to exit):")
 
-    elif stock.isdigit() == False  : #isdigit also rejects -ve numbers
-        print("invalid input please enter a positive number")
-        stock = input("Enter stock quantity (or type 'quit' to exit):")
-        rejected += 1
 
-print("Total unit processed: " + str(inventory) + "\n number of rejected inputs: " + str(rejected))
+def process_delivery(current_total, new_value):
+    total = current_total + new_value
+    return(total)
+
+def calculate_tax(amount):
+    tax_amount = amount * TAX 
+    return(tax_amount)
+
+def generate_report(total_units, failed_attempts):
+    print ("Total inventory: " + total_units + "\nFailed Attemps: " + failed_attempts)
+
+def get_valid_input(inventory, rejected):
+    stock = input("Enter stock quantity (or type 'quit' to exit):")
+    while stock.lower() != "quit":
+        if stock.isdigit() == True :
+            inventory += int(stock)
+            if inventory > MAX_INVENTORY :
+                print("Total Inventory exceeds 500 units.")
+                break
+            stock = input("Enter stock quantity (or type 'quit' to exit):")
+
+        elif stock.isdigit() == False  : #isdigit also rejects -ve numbers
+            print("invalid input please enter a positive number")
+            stock = input("Enter stock quantity (or type 'quit' to exit):")
+            rejected += 1
+    return (inventory, rejected)
+
+def main():
+    inventory = 0
+    rejected = 0
+    inventory, rejected = get_valid_input(inventory, rejected)
+    print(str(inventory) + " " + str(rejected))
+
+if __name__=="__main__":
+    main()
 
