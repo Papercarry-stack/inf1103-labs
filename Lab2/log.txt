@@ -1,0 +1,29 @@
+commit 3e01548324cd70b601f8d6e12cb7fce6eddba54c (HEAD -> master, origin/master)
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Sat Sep 12 10:17:36 2026 +0800
+
+    isdigit also rejct -ve numbers
+
+commit 1731f6e572388242aad2848737f444346eaa6e78
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Sat Sep 12 10:09:05 2026 +0800
+
+    -ve number print changed
+
+commit 5279170d8655f9cb74617605130065e7246c8314
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Sat Sep 12 10:04:53 2026 +0800
+
+    done
+
+commit 1dab7307b575d251814c565590e6f98af73bf2b4
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Sat Sep 12 09:40:01 2026 +0800
+
+    add stock + add invalod input
+
+commit 4c71618e522396e7addbe43f3a27ff87cd08a90a
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 11 14:59:49 2026 +0800
+
+    new file Audit.py
