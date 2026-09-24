@@ -19,6 +19,7 @@ TAX = 0.1
 
 
 
+
 def process_delivery(current_total, new_value):
     total = current_total + new_value
     return(total)
@@ -28,29 +29,38 @@ def calculate_tax(amount):
     return(tax_amount)
 
 def generate_report(total_units, failed_attempts):
-    print ("Total inventory: " + total_units + "\nFailed Attemps: " + failed_attempts)
+    print (f"Total inventory: {total_units}\nFailed Attemps: {failed_attempts}" )
 
-def get_valid_input(inventory, rejected):
+def get_valid_input():
+    total = 0
+    failed = 0
     stock = input("Enter stock quantity (or type 'quit' to exit):")
     while stock.lower() != "quit":
-        if stock.isdigit() == True :
-            inventory += int(stock)
-            if inventory > MAX_INVENTORY :
+
+        if stock.isdigit() :
+            total += int(stock)
+            if total > MAX_INVENTORY :
                 print("Total Inventory exceeds 500 units.")
                 break
             stock = input("Enter stock quantity (or type 'quit' to exit):")
 
-        elif stock.isdigit() == False  : #isdigit also rejects -ve numbers
+        elif not stock.isdigit()  : #isdigit also rejects -ve numbers
             print("invalid input please enter a positive number")
             stock = input("Enter stock quantity (or type 'quit' to exit):")
-            rejected += 1
-    return (inventory, rejected)
+            failed += 1
+    return (total, failed)
 
 def main():
     inventory = 0
     rejected = 0
-    inventory, rejected = get_valid_input(inventory, rejected)
-    print(str(inventory) + " " + str(rejected))
+    current_tax = 0
+    inventory, rejected = get_valid_input()
+    if inventory > MAX_INVENTORY :
+        generate_report(inventory, rejected)
+    else:
+        current_tax = calculate_tax(inventory)
+        inventory = process_delivery(inventory, current_tax)
+        generate_report(inventory, rejected)
 
 if __name__=="__main__":
     main()

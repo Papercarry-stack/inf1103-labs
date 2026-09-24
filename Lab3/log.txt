@@ -1,0 +1,24 @@
+PS C:\SIT\inf1103-labs\Lab3> git log
+commit d6d671f4f6d5b962f74d8c5662afaa67f3f5c8e2 (HEAD -> master, origin/master, origin/HEAD)
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Sun Sep 20 15:34:29 2026 +0800
+
+    lab3 done
+
+commit bdb34e465f251f174342bd98133759af1994f3d8
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Sun Sep 20 14:21:52 2026 +0800
+
+    connecting to git desktop
+
+commit 64dd4f75ac02125d1be1c352c549b73f8bade609
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Sun Sep 20 14:16:16 2026 +0800
+
+    making functions
+
+commit f34c06860179f6db1c34e1f0c1f85139aebd9b32
+Author: Jia Hua <2605754@sit.singaporetech.edu.sg>
+Date:   Fri Sep 18 14:16:22 2026 +0800
+
+    add lab3
