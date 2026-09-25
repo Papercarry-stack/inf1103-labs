@@ -8,3 +8,4 @@
 1008,roof,30
 1009,flooring,500
 1010,Keyboard,11
+1011,wireless keyboard,10
