@@ -38,7 +38,7 @@ def get_valid_input():
 def load_inventory():
     # Open the file in read mode
     inventory = []
-    with open("Lab4/inventory.txt", "r") as file:
+    with open("inventory.txt", "r") as file:
         reader = csv.reader(file)
         for row in reader:
             if row:  # Skip empty rows
@@ -82,7 +82,7 @@ def totally_get_neworder():
     return inventory
 
 def save_inventory(inventory):
-    with open("Lab4/inventory.txt", "w", newline="") as file:
+    with open("inventory.txt", "w", newline="") as file:
         writer = csv.writer(file)
         writer.writerows(inventory)
     print ("Order successfully saved to inventory.txt")
@@ -95,7 +95,7 @@ def main():
         get_neworder(inventory)
         save_inventory(inventory)
     except FileNotFoundError:
-        with open('Lab4/inventory.txt', 'w') as file:
+        with open('inventory.txt', 'w') as file:
             inventory = totally_get_neworder()
             save_inventory(inventory)
     

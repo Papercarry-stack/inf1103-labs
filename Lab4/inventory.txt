@@ -3,3 +3,5 @@
 3,wireless mouse,10
 4,wireless keyboard,2
 5,door,10
+6,roof tile,300
+7,floor tile ,30
