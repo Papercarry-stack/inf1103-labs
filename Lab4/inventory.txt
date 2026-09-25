@@ -1,0 +1,5 @@
+1,keyboard,20
+2,mouse,10
+3,wireless mouse,10
+4,wireless keyboard,2
+5,door,10

@@ -1,0 +1,9 @@
+1001,Wireless Mouse,2
+1002,Keyboard,1
+1003,USB Cable,3
+1004,wireless,3
+1005,key,4
+1006,lock,30
+1007,door,5
+1008,roof,30
+1009,flooring,500
