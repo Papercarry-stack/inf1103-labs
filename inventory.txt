@@ -7,3 +7,4 @@
 1007,door,5
 1008,roof,30
 1009,flooring,500
+1010,Keyboard,11

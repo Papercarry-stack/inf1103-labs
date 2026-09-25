@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY Audit.py .
+COPY persistent_auditor.py .
 
-CMD ["python","mocular_auditor.py"]
+CMD ["python","persistent_auditor.py"]

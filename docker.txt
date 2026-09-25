@@ -1,0 +1,3 @@
+ docker build  -t inf1103-labs-persistent_auditor .
+
+ docker run --rm -it -v "${PWD}:/usr/src/app" inf1103-labs-persistent_auditor
