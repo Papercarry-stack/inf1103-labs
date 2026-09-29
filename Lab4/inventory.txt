@@ -6,3 +6,4 @@
 6,roof tile,300
 7,floor tile,30
 8,keyboard,10
+9,lock,30
