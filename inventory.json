@@ -1,1 +1,26 @@
-[{"ID": "001", "Name": "Monitor", "Price": "299.99", "Stock": "10"}]
+[
+    {
+        "ID": "001",
+        "Name": "Laptop",
+        "Price": "1200.00",
+        "Stock": "15"
+    },
+    {
+        "ID": "002",
+        "Name": "Mouse",
+        "Price": "25.50",
+        "Stock": "50"
+    },
+    {
+        "ID": "003",
+        "Name": "Keyboard",
+        "Price": "45.00",
+        "Stock": "25"
+    },
+    {
+        "ID": "004",
+        "Name": "Monitor",
+        "Price": "299.99",
+        "Stock": "10"
+    }
+]
