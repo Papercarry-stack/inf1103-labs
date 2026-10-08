@@ -109,22 +109,22 @@ def main():
     "5. Save Inventory\n" \
     "6. Exit\n" \
     "-------------------------" )
-    i = int(input("Enter Option: "))
+    i = input("Enter Option: ")
     while True :
         match i:
-            case 1:
+            case "1":
                 display_all(inventory)
-            case 2:
+            case "2":
                 add_product(inventory)
-            case 3:
+            case "3":
                 update_stock(inventory)
-            case 4:
+            case "4":
                 search_product(inventory)
-            case 5:
+            case "5":
                 print("Saving inventory...")
                 save_inventory(inventory)
                 print ("Order successfully saved to inventory.txt")
-            case 6:
+            case "6":
                 print("Saving inventory before exit...")
                 save_inventory(inventory)
                 print("Inventory saved successfully.")
@@ -132,7 +132,7 @@ def main():
                 break
             case _:
                 print("Invalid option. Please choose between 1 and 6.")
-        i = int(input("Enter Option: "))
+        i = input("Enter Option: ")
 
 
 

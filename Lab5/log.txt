@@ -1,0 +1,12 @@
+
+commit 32fc9061d706d9a276cfaaa4f5f0bde6dc265ee8 (HEAD -> master, origin/master, origin/HEAD)
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Thu Oct 8 11:30:26 2026 +0800
+
+    Lab5 Done
+
+commit 79c44efa2f43784d4a4fba8606eba96b85bb3a6e
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Thu Oct 8 09:48:56 2026 +0800
+
+    created menu function
