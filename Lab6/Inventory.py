@@ -1,5 +1,6 @@
 import json
 import os
+from Product import Product 
 
 class Inventory():
 
@@ -17,9 +18,55 @@ class Inventory():
                 
         # Open and load the file normally
         with open(file_path, "r") as file:
-            inventory = json.load(file)
-            
-        return inventory
+            all_item = json.load(file)
 
-my_inventory = Inventory()
-print(my_inventory.inventory)
+        product_list = []
+        for item in all_item:
+            product_obj = Product(
+                item["ID"], 
+                item["Name"], 
+                item["Price"], 
+                item["Stock"]
+            )
+            product_list.append(product_obj)
+        return product_list
+
+    def display_all(self):
+        show_inv = ""
+        for product in self.inventory:
+            show_inv += product.display_information()
+        print("Displaying all products...")
+        print(
+            "Current Inventory\n" \
+            "-----------------------------------------\n" \
+            + show_inv \
+            + "-----------------------------------------")
+
+    def add_product(self, new_product):
+        self.inventory.append(new_product)
+        print("Product added successfully!\n")
+
+    def generate_next_id(self):
+        if len(self.inventory) == 0:
+            return "001"
+        else:
+            last_id = self.inventory[-1]._product_id
+            return f"{int(last_id) + 1:03d}"
+
+    def search_product(self, id_tofind):
+        show_pro = ""
+        found_product = None
+        for product in self.inventory:
+                if product._product_id == id_tofind:
+                    found_product = product
+                    break
+        if found_product:
+            show_pro = ""
+            show_pro += found_product.display_information()
+            print("Product Found \n--------------------------------------")
+            print(show_pro)
+            print("--------------------------------------")
+            return found_product
+        else:
+            print("Product not found \n")
+            return found_product
