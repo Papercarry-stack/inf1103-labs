@@ -39,16 +39,16 @@ def main():
                 case "4":
                    id_tofind = input("Enter Product ID to search: ")
                    inventory.search_product(id_tofind)
-                # case "5":
-                #    print("Saving inventory...")
-                #    save_inventory(inventory)
-                #    print ("Order successfully saved to inventory.txt")
-                # case "6":
-                #    print("Saving inventory before exit...")
-                #    save_inventory(inventory)
-                #    print("Inventory saved successfully.")
-                #    print("Thank you for using Inventory Management System.\nProgram terminated..")
-                #    break
+                case "5":
+                   print("Saving inventory...")
+                   inventory.save_inventory()
+                   print ("Order successfully saved to inventory.txt")
+                case "6":
+                   print("Saving inventory before exit...")
+                   inventory.save_inventory()
+                   print("Inventory saved successfully.")
+                   print("Thank you for using Inventory Management System.\nProgram terminated..")
+                   break
                 case _:
                    print("Invalid option. Please choose between 1 and 6.")
             i = input("Enter Option: ")

@@ -23,10 +23,10 @@ class Inventory():
         product_list = []
         for item in all_item:
             product_obj = Product(
-                item["ID"], 
-                item["Name"], 
-                item["Price"], 
-                item["Stock"]
+                item["_product_id"], 
+                item["_name"], 
+                item["_price"], 
+                item["_stock"]
             )
             product_list.append(product_obj)
         return product_list
@@ -70,3 +70,11 @@ class Inventory():
         else:
             print("Product not found \n")
             return found_product
+
+    def save_inventory(self):
+        savedata = []
+        for product in self.inventory:
+           savedata.append(product.__dict__)
+        with open("inventory.json","w") as f:
+            json.dump(savedata, f, indent=4)
+            json.dumps

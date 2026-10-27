@@ -1,26 +1,32 @@
 [
     {
-        "ID": "001",
-        "Name": "Laptop",
-        "Price": "1200.00",
-        "Stock": "15"
+        "_product_id": "001",
+        "_name": "Laptop",
+        "_price": "1200.00",
+        "_stock": "15"
     },
     {
-        "ID": "002",
-        "Name": "Mouse",
-        "Price": "25.50",
-        "Stock": "50"
+        "_product_id": "002",
+        "_name": "Mouse",
+        "_price": "25.50",
+        "_stock": "50"
     },
     {
-        "ID": "003",
-        "Name": "Keyboard",
-        "Price": "45.00",
-        "Stock": "25"
+        "_product_id": "003",
+        "_name": "Keyboard",
+        "_price": "45.00",
+        "_stock": "25"
     },
     {
-        "ID": "004",
-        "Name": "Monitor",
-        "Price": "299.99",
-        "Stock": "10"
+        "_product_id": "004",
+        "_name": "Monitor",
+        "_price": "299.99",
+        "_stock": "10"
+    },
+    {
+        "_product_id": "005",
+        "_name": "laptop stand",
+        "_price": "30.00",
+        "_stock": "50"
     }
 ]
