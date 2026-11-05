@@ -23,10 +23,10 @@ class Inventory():
         product_list = []
         for item in all_item:
             product_obj = Product(
-                item["_product_id"], 
-                item["_name"], 
-                item["_price"], 
-                item["_stock"]
+                item["_Product__product_id"], 
+                item["_Product__name"], 
+                item["_Product__price"], 
+                item["_Product__stock"]
             )
             product_list.append(product_obj)
         return product_list
@@ -50,14 +50,15 @@ class Inventory():
         if len(self.inventory) == 0:
             return "001"
         else:
-            last_id = self.inventory[-1]._product_id
+            last_id = Product.get_product_id(self.inventory[-1]) 
             return f"{int(last_id) + 1:03d}"
 
     def search_product(self, id_tofind):
         show_pro = ""
         found_product = None
         for product in self.inventory:
-                if product._product_id == id_tofind:
+                product_id = Product.get_product_id(product)
+                if product_id == id_tofind:
                     found_product = product
                     break
         if found_product:
