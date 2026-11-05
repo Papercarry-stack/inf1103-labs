@@ -1,32 +1,23 @@
 [
     {
         "_Product__product_id": "001",
-        "_Product__name": "Laptop",
-        "_Product__price": "1200.00",
-        "_Product__stock": "15"
+        "_Product__name": "Keyboard",
+        "_Product__price": "30.00",
+        "_Product__stock": "30",
+        "_PhysicalProduct__weight": "1.5"
     },
     {
         "_Product__product_id": "002",
-        "_Product__name": "Mouse",
-        "_Product__price": "25.50",
-        "_Product__stock": "50"
+        "_Product__name": "Digital Photo",
+        "_Product__price": "10.00",
+        "_Product__stock": "50",
+        "_DigitalProduct__download_size": "100"
     },
     {
         "_Product__product_id": "003",
-        "_Product__name": "Keyboard",
-        "_Product__price": "45.00",
-        "_Product__stock": "50"
-    },
-    {
-        "_Product__product_id": "004",
-        "_Product__name": "Monitor",
-        "_Product__price": "299.99",
-        "_Product__stock": "10"
-    },
-    {
-        "_Product__product_id": "005",
-        "_Product__name": "laptop stand",
-        "_Product__price": "30.00",
-        "_Product__stock": "40"
+        "_Product__name": "mouse",
+        "_Product__price": "10.00",
+        "_Product__stock": "30",
+        "_PhysicalProduct__weight": "0.5"
     }
 ]
