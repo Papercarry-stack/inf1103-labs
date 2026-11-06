@@ -19,5 +19,12 @@
         "_Product__price": "10.00",
         "_Product__stock": "30",
         "_PhysicalProduct__weight": "0.5"
+    },
+    {
+        "_Product__product_id": "004",
+        "_Product__name": "Wireless Keyboard",
+        "_Product__price": "100.00",
+        "_Product__stock": "10",
+        "_PhysicalProduct__weight": "1.5"
     }
 ]
