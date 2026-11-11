@@ -1,0 +1,36 @@
+class Supplier:
+    """A supplier of products.
+
+    Association with Product: a Supplier exists independently of any Product,
+    and a Product can exist without its Supplier being 'part of' it.
+    Supplier deliberately does NOT know about Product (loose coupling).
+    """
+
+    def __init__(self, supplier_id: str, name: str, contact_email: str):
+        self.__supplier_id: str = supplier_id
+        self.__name: str = name
+        self.__contact_email: str = contact_email
+
+    def get_supplier_id(self) -> str:
+        return self.__supplier_id
+
+    def get_name(self) -> str:
+        return self.__name
+
+    def get_contact_email(self) -> str:
+        return self.__contact_email
+
+    def display_information(self) -> str:
+        return (f"Supplier {self.__supplier_id} | {self.__name} | "
+                f"{self.__contact_email}")
+
+    def to_dict(self) -> dict[str, str]:
+        return {
+            "supplier_id": self.__supplier_id,
+            "name": self.__name,
+            "contact_email": self.__contact_email,
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict[str, str]) -> "Supplier":
+        return cls(data["supplier_id"], data["name"], data["contact_email"])
