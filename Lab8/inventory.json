@@ -4,7 +4,11 @@
         "name": "Laptop",
         "price": 1200.0,
         "stock": 15,
-        "supplier": {"supplier_id": "S001", "name": "TechSource", "contact_email": "sales@techsource.com"},
+        "supplier": {
+            "supplier_id": "S001",
+            "name": "TechSource",
+            "contact_email": "sales@techsource.com"
+        },
         "type": "physical",
         "weight": 2.2
     },
@@ -13,7 +17,11 @@
         "name": "Wireless Mouse",
         "price": 40.0,
         "stock": 20,
-        "supplier": {"supplier_id": "S001", "name": "TechSource", "contact_email": "sales@techsource.com"},
+        "supplier": {
+            "supplier_id": "S001",
+            "name": "TechSource",
+            "contact_email": "sales@techsource.com"
+        },
         "type": "physical",
         "weight": 0.1
     },
@@ -22,7 +30,11 @@
         "name": "Python eBook",
         "price": 19.99,
         "stock": 100,
-        "supplier": {"supplier_id": "S002", "name": "PageTurner Press", "contact_email": "orders@pageturner.com"},
+        "supplier": {
+            "supplier_id": "S002",
+            "name": "PageTurner Press",
+            "contact_email": "orders@pageturner.com"
+        },
         "type": "digital",
         "download_size": 5.5
     }

@@ -1,0 +1,77 @@
+commit ecf83a894db4048fbcb5a6d4b9d5213da0687075 (HEAD -> master, origin/master, origin/HEAD)
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 20:25:12 2026 +0800
+
+    Create test_lab8.py
+
+commit 878414b3c7bbe376974ce871a3b37c7d4d55fafc
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 20:06:35 2026 +0800
+:
+commit ecf83a894db4048fbcb5a6d4b9d5213da0687075 (HEAD -> master, origin/master, origin/HEAD)
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 20:25:12 2026 +0800
+
+    Create test_lab8.py
+
+commit 878414b3c7bbe376974ce871a3b37c7d4d55fafc
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 20:06:35 2026 +0800
+
+    connecting all the old files to newly created ones
+
+commit 22192f8bdfd373e3e3dc9faeffd8c2e3235a3bb5
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:57:18 2026 +0800
+
+    Create Order.py
+
+commit f27ce6c5badfb67de9bc5d2dd61f4b7822dee931
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:57:03 2026 +0800
+
+    Create OrderLine.py
+
+commit 2fe243fba0f83aa787aea4aa80b7e16563ee6f43
+:
+commit ecf83a894db4048fbcb5a6d4b9d5213da0687075 (HEAD -> master, origin/master, origin/HEAD)
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 20:25:12 2026 +0800
+
+    Create test_lab8.py
+
+commit 878414b3c7bbe376974ce871a3b37c7d4d55fafc
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 20:06:35 2026 +0800
+
+    connecting all the old files to newly created ones
+
+commit 22192f8bdfd373e3e3dc9faeffd8c2e3235a3bb5
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:57:18 2026 +0800
+
+    Create Order.py
+
+commit f27ce6c5badfb67de9bc5d2dd61f4b7822dee931
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:57:03 2026 +0800
+
+    Create OrderLine.py
+
+commit 2fe243fba0f83aa787aea4aa80b7e16563ee6f43
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:55:45 2026 +0800
+
+    Update Inventory.py
+
+commit 080615c698c39ccd2b7d7619f5a37d85ae6127ab
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:53:55 2026 +0800
+
+    Create Supplier.py
+
+commit 6f4dd7bc268f10c566954fa738b05b556955512b
+Author: Papercarry-stack <devilabyss01@gmail.com>
+Date:   Wed Nov 11 19:51:09 2026 +0800
+
+    copying lab 7 to make lab8 base
