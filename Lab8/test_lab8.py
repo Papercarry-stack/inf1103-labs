@@ -26,7 +26,7 @@ print(laptop.get_supplier().display_information())
 print(ebook.get_supplier().display_information())
 assert laptop.get_supplier() is supplier and ebook.get_supplier() is supplier
 
-del supplier  # removes the NAME only; the objects still reference the Supplier
+del supplier 
 print("After del supplier ->", laptop.get_supplier().display_information())
 assert laptop.get_supplier().get_name() == "TechSource"
 
@@ -41,7 +41,7 @@ print("Still usable after removal:", mouse.display_information())
 inv_b.add_product(mouse)
 assert inv_b.find_product("003") is mouse
 inv_a.add_product(laptop)
-inv_a.products.clear()  # emptying an inventory does not destroy products
+inv_a.products.clear()  
 print("Laptop after inventory emptied:", laptop.get_name(), laptop.get_stock())
 
 # ---------- Section 4: composition ----------
@@ -49,14 +49,14 @@ section("4. Composition: Order and OrderLine")
 order1, order2 = Order("ORD001"), Order("ORD002")
 order1.add_order_line(laptop, 2)
 order1.add_order_line(ebook, 3)
-order2.add_order_line(laptop, 1)  # same Product, different Order
+order2.add_order_line(laptop, 1)  
 print(order1.display_information())
 print(order2.display_information())
 assert abs(order1.calculate_total() - (2 * 1200.0 + 3 * 19.99)) < 1e-9
 line1 = order1.get_order_lines()[0]
 line2 = order2.get_order_lines()[0]
-assert line1 is not line2                         # 2 separate OrderLines
-assert line1.get_product() is line2.get_product() # 1 shared Product
+assert line1 is not line2                        
+assert line1.get_product() is line2.get_product() 
 print("Two OrderLines, one Product:", id(line1) != id(line2),
       id(line1.get_product()) == id(line2.get_product()))
 assert order1.remove_order_line("002") is True
