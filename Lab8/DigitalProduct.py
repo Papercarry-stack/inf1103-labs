@@ -1,18 +1,26 @@
 from Product import Product
+from Supplier import Supplier
+
 
 class DigitalProduct(Product):
-    def __init__(self, product_id, name, price, stock, download_size):
-        super().__init__(product_id, name, price, stock)
-        self.__download_size = download_size
+    def __init__(self, product_id: str, name: str, price: float, stock: int,
+                 download_size: float, supplier: Supplier):
+        super().__init__(product_id, name, price, stock, supplier)
+        self.__download_size: float = download_size
 
-    def get_download_size(self):
+    def get_download_size(self) -> float:
         return self.__download_size
 
-    def get_fulfilment_info(self):
+    def get_fulfilment_info(self) -> str:
         return "Delivered digitally via download link"
 
-    def display_information(self):
-        show_product = super().display_information()
-        show_product += " | size: " + str(self.__download_size) + "MB"
-        show_product += " | " + self.get_fulfilment_info() + "\n"
-        return show_product
+    def display_information(self) -> str:
+        return (super().display_information()
+                + f" | size: {self.__download_size}MB"
+                + f" | {self.get_fulfilment_info()}")
+
+    def to_dict(self) -> dict:
+        data = super().to_dict()
+        data["type"] = "digital"
+        data["download_size"] = self.__download_size
+        return data

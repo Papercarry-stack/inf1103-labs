@@ -1,44 +1,29 @@
 [
     {
-        "_product_id": "001",
-        "_name": "Laptop",
-        "_price": "1200.00",
-        "_stock": "15"
+        "product_id": "001",
+        "name": "Laptop",
+        "price": 1200.0,
+        "stock": 15,
+        "supplier": {"supplier_id": "S001", "name": "TechSource", "contact_email": "sales@techsource.com"},
+        "type": "physical",
+        "weight": 2.2
     },
     {
-        "_product_id": "002",
-        "_name": "Mouse",
-        "_price": "25.50",
-        "_stock": "50"
+        "product_id": "002",
+        "name": "Wireless Mouse",
+        "price": 40.0,
+        "stock": 20,
+        "supplier": {"supplier_id": "S001", "name": "TechSource", "contact_email": "sales@techsource.com"},
+        "type": "physical",
+        "weight": 0.1
     },
     {
-        "_product_id": "003",
-        "_name": "Keyboard",
-        "_price": "45.00",
-        "_stock": "25"
-    },
-    {
-        "_product_id": "004",
-        "_name": "Monitor",
-        "_price": "299.99",
-        "_stock": "10"
-    },
-    {
-        "_product_id": "005",
-        "_name": "laptop stand",
-        "_price": "30.00",
-        "_stock": "50"
-    },
-    {
-        "_product_id": "006",
-        "_name": "wireless mouse",
-        "_price": "40.00",
-        "_stock": "20"
-    },
-    {
-        "_product_id": "007",
-        "_name": "wireless keybaord",
-        "_price": "100.00",
-        "_stock": "60"
+        "product_id": "003",
+        "name": "Python eBook",
+        "price": 19.99,
+        "stock": 100,
+        "supplier": {"supplier_id": "S002", "name": "PageTurner Press", "contact_email": "orders@pageturner.com"},
+        "type": "digital",
+        "download_size": 5.5
     }
 ]

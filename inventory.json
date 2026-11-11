@@ -1,30 +1,54 @@
 [
     {
-        "_Product__product_id": "001",
-        "_Product__name": "Keyboard",
-        "_Product__price": "30.00",
-        "_Product__stock": "30",
-        "_PhysicalProduct__weight": "1.5"
+        "product_id": "001",
+        "name": "Laptop",
+        "price": 1200.0,
+        "stock": 15,
+        "supplier": {
+            "supplier_id": "S001",
+            "name": "TechSource",
+            "contact_email": "sales@techsource.com"
+        },
+        "type": "physical",
+        "weight": 2.2
     },
     {
-        "_Product__product_id": "002",
-        "_Product__name": "Digital Photo",
-        "_Product__price": "10.00",
-        "_Product__stock": "50",
-        "_DigitalProduct__download_size": "100"
+        "product_id": "002",
+        "name": "Wireless Mouse",
+        "price": 40.0,
+        "stock": 20,
+        "supplier": {
+            "supplier_id": "S001",
+            "name": "TechSource",
+            "contact_email": "sales@techsource.com"
+        },
+        "type": "physical",
+        "weight": 0.1
     },
     {
-        "_Product__product_id": "003",
-        "_Product__name": "mouse",
-        "_Product__price": "10.00",
-        "_Product__stock": "30",
-        "_PhysicalProduct__weight": "0.5"
+        "product_id": "003",
+        "name": "Python eBook",
+        "price": 19.99,
+        "stock": 100,
+        "supplier": {
+            "supplier_id": "S002",
+            "name": "PageTurner Press",
+            "contact_email": "orders@pageturner.com"
+        },
+        "type": "digital",
+        "download_size": 5.5
     },
     {
-        "_Product__product_id": "004",
-        "_Product__name": "Wireless Keyboard",
-        "_Product__price": "100.00",
-        "_Product__stock": "10",
-        "_PhysicalProduct__weight": "1.5"
+        "product_id": "004",
+        "name": "Keyboard",
+        "price": 100.0,
+        "stock": 30,
+        "supplier": {
+            "supplier_id": "S003",
+            "name": "Challenger",
+            "contact_email": "Challenger@challenger.com"
+        },
+        "type": "physical",
+        "weight": 2.0
     }
 ]
