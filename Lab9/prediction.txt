@@ -1,0 +1,45 @@
+2.1: Student discount
+
+Without Strategy, the Order class changes, specifically calculate_total(), which gets another elif. That breaks the Open/Closed Principle.
+With Strategy, Order doesn’t change at all. You add a new StudentDiscount class with its own apply().
+
+2.3: Order totalling 250
+
+With BulkDiscount(200, 20): 250 is at or above 200, so the result is 230.
+After set_discount(PercentageDiscount(10)): 225. The new strategy replaces the old one rather than stacking on it, and it works from the raw 250.
+
+2.4: Order and DiscountStrategy
+
+Association. A discount isn’t part of an order, it’s something the order uses. Two orders can share one PercentageDiscount object, which wouldn’t be possible with composition.
+Multiplicities: each order has exactly one strategy (NoDiscount is the default), so the strategy end is 1. One strategy can serve many orders, so the Order end is 0..*.
+
+3.2: ProductFactory.create("service", ...)
+
+The else branch runs and its raise ValueError(...) line fires, with the message “Unknown product type: service”.
+If nothing catches it, Python prints a traceback and the program stops. In load_products() it is caught, so that row is skipped.
+
+3.3: Adding BundleProduct
+
+Before the factory, count every place that builds products directly, using your Section 1.5 notes. In this project that’s main.py (Add Product) and Inventory.load_inventory(), plus any tests.
+After the factory, there’s one place to edit: ProductFactory.create(). The menu in main.py would still need an option so users can pick the new type.
+It still breaks OCP because you edit the if/elif inside create(). That’s acceptable here because the change is in one place and the app is small. A registry or plugin system would be over-engineering.
+
+4: Validation and LSP
+
+No, DigitalProduct shouldn’t skip or change the stock rule. Code written against Product expects update_stock(-5) to be rejected. If one subclass accepted it, you couldn’t swap subclasses safely. That’s why the check lives in Product.
+
+5.1: Inputs abc, -5, 12.50
+
+abc: float("abc") raises ValueError, so it prints Please enter a valid number, e.g. 12.50 and asks again.
+-5: float works, then the if value <= 0 check prints Please enter a number greater than zero. and asks again.
+12.50: nothing prints, and the function returns 12.5 (a float, not the string).
+
+5.2: Loading the CSV
+
+File present: three products load (P001, D001, P003). The output, in order:
+Skipping row 4: Unknown product type: service
+Skipping row 5: could not convert string to float: 'abc'
+3 products loaded.
+Load attempt finished.
+File renamed: except FileNotFoundError runs and prints Products file not found: .... else is skipped, so no “products loaded” line. finally still runs and prints Load attempt finished.
+Row numbers count the header as row 1, which is why the bad rows are 4 and 5.
